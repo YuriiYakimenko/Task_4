@@ -2,20 +2,29 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private WheelJoint2D wheel;
-    private JointMotor2D motor;
+    private WheelJoint2D[] wheels;
     public float speed;
+
+    private float _horizontalForce;
 
     void Start()
     {
-        wheel = GetComponent<WheelJoint2D>();
-        motor = wheel.motor; 
+        wheels = GetComponents<WheelJoint2D>();
     }
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-        float horizontalForce = Input.GetAxis("Horizontal");
-        motor.motorSpeed = speed * horizontalForce;
-        wheel.motor = motor;
+        _horizontalForce = Input.GetAxis("Horizontal");
+    }
+
+    void FixedUpdate()
+    {
+        for (int i = 0; i < wheels.Length; i++)
+        {
+            var wheel = wheels[i];
+            var motor = wheel.motor;
+            motor.motorSpeed = -speed * _horizontalForce;
+            wheel.motor = motor;
+        }
     }
 }

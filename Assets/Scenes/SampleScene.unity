@@ -206,13 +206,13 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
+  m_Anchor: {x: -0.05469799, y: 0.10939598}
   m_ConnectedAnchor: {x: 1.144414, y: -0.6560613}
   m_Suspension:
-    m_DampingRatio: 1
-    m_Frequency: 20
+    m_DampingRatio: 0.7
+    m_Frequency: 10
     m_Angle: 90
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 100
     m_MaximumMotorForce: 10000
@@ -477,11 +477,11 @@ WheelJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
+  m_Anchor: {x: 0.05469799, y: 0.027348995}
   m_ConnectedAnchor: {x: -1.0365114, y: -0.74181473}
   m_Suspension:
-    m_DampingRatio: 1
-    m_Frequency: 20
+    m_DampingRatio: 0.7
+    m_Frequency: 12
     m_Angle: 90
   m_UseMotor: 1
   m_Motor:
@@ -1625,13 +1625,13 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 666466625}
+  m_ConnectedRigidBody: {fileID: 1458039280}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.10586176, y: -0.29300675}
-  m_ConnectedAnchor: {x: 0.065837376, y: 0.5409713}
+  m_ConnectedAnchor: {x: -0.22641897, y: 1.1895782}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -2800,13 +2800,13 @@ HingeJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 666466625}
+  m_ConnectedRigidBody: {fileID: 1458039280}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 0
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.12018086, y: 0.12890369}
-  m_ConnectedAnchor: {x: 0.11916844, y: 0.40467}
+  m_ConnectedAnchor: {x: -0.13962793, y: 1.0717242}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:

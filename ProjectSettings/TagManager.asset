@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Road
   layers:
   - Default
   - TransparentFX
@@ -38,14 +39,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: RoadLayer 1
     uniqueID: 3822610579
     locked: 0
   - name: BeachLayer 2
     uniqueID: 3547419591
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   m_RenderingLayers:
   - Default

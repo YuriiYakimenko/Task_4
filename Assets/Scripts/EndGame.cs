@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class EndGame : MonoBehaviour
 {
@@ -9,7 +10,16 @@ public class EndGame : MonoBehaviour
 
         if (other.CompareTag("Road"))
         {
-            SceneManager.LoadScene("GameOver");
+
+            StartCoroutine(MyCoroutine(2.0f));
+            Time.timeScale = 0f;
         }
+
+    }
+    IEnumerator MyCoroutine(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+         Time.timeScale = 1f;
+        SceneManager.LoadScene("GameOver");
     }
 }
